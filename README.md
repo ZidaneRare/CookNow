@@ -15,5 +15,5 @@ Sir.Teddy, Mr.Mahdy & Sir.Raffly as Figma UI/UX Designer
 -
 Sir.Fatruzein, Mr.Afkaar & Miss.Lia as Team Research, Paper & Testing 
 -
-i'll host it later with incoming updates.
+i'll host it future with incoming updates.
 -
