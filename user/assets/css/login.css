@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 1rem;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*{
+    font-family: "Poppins";
+}
+
+.form {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-30%, -50%);
+    background-color: var(--teal-1);
+    padding: 40px 50px;
+    width: fit-content;
+    box-shadow: 0px 0px 25px 10px #0006;
+    border-radius: 15px;
+}
+
+.bottom a:hover{
+    color: var(--teal-4) !important;
+}
+
+.group {
+    position: relative;
+  }
+  
+  .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+  }
+  
+  .input:focus ~ label,
+  .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: var(--grey-2);
+  }
+  
+  .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+  }
+  
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: var(--grey-3);
+    transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+  }
+  
+  .bar:before {
+    left: 50%;
+  }
+  
+  .bar:after {
+    right: 50%;
+  }
+  
+  .input:focus ~ .bar:before,
+  .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .input:focus ~ .highlight {
+    animation: inputHighlighter 0.4s ease;
+  }
+  
+  @keyframes inputHighlighter {
+    from {
+      background: var(--grey-1);
+    }
+  
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  

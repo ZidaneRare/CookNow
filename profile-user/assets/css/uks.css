@@ -1,0 +1,22 @@
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.form-group input[type="password"]
+ {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    color: var(--black);
+}
+
+.btn-ubah{
+    width: 100%;
+}

@@ -1,0 +1,161 @@
+:root{
+    /*Color*/
+    --white : #fffff;
+    --black : #1e1e1e;
+    --teal-1 : #003c43;
+    --teal-2 : #135d66;
+    --teal-3 : #77b0aa;
+    --teal-4 : #e3fef7;
+    --red-1 : #d21312;
+    --red-2 : #ed2b2a;
+    --red-3 : #f15a59;
+    --blue-1 : #3572ef;
+    --blue-2 : #3abef9;
+    --blue-3 : #a7e6ff;
+    --grey-primary : #333333;
+    --grey-3 : #666666;
+    --grey-2 : #b0b0b0;
+    --grey-1 : #f3f4f9;
+    --linear: var(--teal-2) 0%, #f1eee5 20%;
+
+
+    /*Font-Family*/
+    --poppins : "Poppins"
+}
+
+.home{
+    background: linear-gradient(var(--linear));
+
+}
+
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rekpop{
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -50px;
+    position: absolute;
+    background-color: var(--teal-2);
+    width: 400px;
+    height: 50px;
+}
+
+.rekpop-title{
+    margin-top: 8px;
+}
+
+.card-rekpop{
+    transition: 0.5s all;
+}
+
+.card-rekpop img{
+    box-shadow: 3px 4px 5px #0002;
+}
+
+.card-rekpop p{
+    padding: 5px !important;
+    color: #fff !important;
+    background-color: #0005;
+    backdrop-filter: blur(10px);
+    margin-top: -170px;
+    transition: 0.3s all;
+}
+
+.card-rekpop:hover{
+    transition: 0.3s all;
+    transform: scale(1.015);
+    p{
+        backdrop-filter: blur(0px);
+        transition: 0.3s all;
+        transform: translateY(125px);
+        border-radius: 10px;
+        color: #fff !important;
+        background: linear-gradient(transparent 0%, var(--teal-2) 70%, var(--teal-1) 100%);
+    }
+}
+
+.card-rekpop.grayscale {
+    filter: grayscale(70%);
+    p{
+        display: none;
+    }
+}
+
+.card-rekmakmin{
+    padding: 0 !important;
+    border-radius: 20px;
+    background-color: white;
+    width: fit-content !important;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #0003;
+    height: 375px;
+}
+
+.card-rekmakmin:hover{
+    transition: 0.3s all;
+    scale: 1.0035;
+}
+
+.card-rekmakmin .bg-image{
+    border-radius: 19px 19px 0 0;
+    width: 300px;
+    aspect-ratio: 4/3;
+}
+
+.nama-fav{
+    width: 300px;
+    height: fit-content;
+    align-items: center;
+}
+
+.nama-fav p, .nama-fav i{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.nama-fav p{
+    font-size: 18px;
+}
+
+.rating-star i{
+    font-size: 16px;
+}
+
+.rekmakmin-pad{
+    padding: 60px 0 75px 0;
+}
+
+.rekmin-back{
+    background-color: #F1EEE5;
+}
+
+.ukuran {
+    scale:calc(90%);
+}
+
+.footer{
+    background-color: var(--teal-2) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer img{
+    width: max-content;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer .social-media i{
+    font-size: 24px;
+    margin-bottom: 30px;
+}

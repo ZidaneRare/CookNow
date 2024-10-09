@@ -1,0 +1,19 @@
+*{
+    font-family: "Poppins";
+}
+
+.left input, .left select, option{
+    color: var(--black) !important;
+    border: 0px;
+    border-radius: 5px;
+    padding:0 5px;
+}
+
+label, a{
+    color:var(--black) !important;
+}
+
+tr, td, tbody, p, ul, li{
+    color: var(--black) !important;
+}
+

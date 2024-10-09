@@ -1,0 +1,64 @@
+:root{
+    /*Color*/
+    --white : #fffff;
+    --black : #1e1e1e;
+    --teal-1 : #003c43;
+    --teal-2 : #135d66;
+    --teal-3 : #77b0aa;
+    --teal-4 : #e3fef7;
+    --red-1 : #d21312;
+    --red-2 : #ed2b2a;
+    --red-3 : #f15a59;
+    --blue-1 : #3572ef;
+    --blue-2 : #3abef9;
+    --blue-3 : #a7e6ff;
+    --grey-primary : #333333;
+    --grey-3 : #666666;
+    --grey-2 : #b0b0b0;
+    --grey-1 : #f3f4f9;
+
+
+    /*Font-Family*/
+    --poppins : "Poppins"
+}
+
+.fs-h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.fs-h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+.fs-h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.fs-h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.fs-icon{
+    font-size: 16px;
+    font-weight: 800;
+}
+.fs-body{
+    font-size: 16px;
+    font-weight: 400;
+}
+.fs-note{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--poppins);
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+}
+

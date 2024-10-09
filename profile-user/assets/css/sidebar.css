@@ -1,0 +1,40 @@
+.sidebar {
+    width: 350px; /* Lebar sidebar */
+    background-color: var(--teal-2);
+}
+
+.sidebar nav .nav-option {
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.nav-select{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-left: 10px;
+    border-radius: 15px 0px 0px 15px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-select p{
+    color: var(--white);
+}
+
+.sidebar nav ul a:hover, .actived{
+    background-color: var(--teal-1);
+}
+
+main{
+    padding: 0 !important;
+    width: 100%;
+}
+
+header{
+    background-color: var(--teal-1);
+    padding-left: 30px;
+    height: 50px;
+}
+

@@ -1,0 +1,20 @@
+.footer{
+    background-color: var(--teal-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer img{
+    width: max-content;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer .social-media i{
+    font-size: 24px;
+    margin-bottom: 30px;
+}

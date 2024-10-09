@@ -1,0 +1,63 @@
+:root{
+    /*Color*/
+    --white : #fffff;
+    --black : #1e1e1e;
+    --teal-1 : #003c43;
+    --teal-2 : #135d66;
+    --teal-3 : #77b0aa;
+    --teal-4 : #e3fef7;
+    --red-1 : #d21312;
+    --red-2 : #ed2b2a;
+    --red-3 : #f15a59;
+    --blue-1 : #3572ef;
+    --blue-2 : #3abef9;
+    --blue-3 : #a7e6ff;
+    --grey-primary : #333333;
+    --grey-3 : #666666;
+    --grey-2 : #b0b0b0;
+    --grey-1 : #f3f4f9;
+
+
+    /*Font-Family*/
+    --poppins : "Poppins"
+}
+
+
+.accordion, .comment{
+    width: 40vw; 
+    box-shadow: 0 5px 10px #0002;
+    border-radius: 10px;
+}
+
+.accordion-button{
+    background-color:  #fff !important;
+}
+
+.accordion{
+    background-color: #fff;
+}
+
+body{
+    background-color: var(--grey-1) !important;
+    box-sizing: border-box;
+}
+
+.accordion-body ul, .accordion-body li {
+    color: #1e1e1e !important;
+}
+
+.accordion-body tr, .accordion-body td, .accordion-body p {
+    color: #1e1e1e;
+}
+
+.accordion-body td{
+    height: 35px;
+}
+
+.accordion-body td:nth-child(even){
+    text-align: right;
+}
+
+.accordion-body table{
+    width: 100%;
+}

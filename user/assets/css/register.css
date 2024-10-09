@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+.form {
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  transform: translate(-30%, -50%);
+  background-color: var(--teal-1);
+  padding: 40px 50px;
+  width: fit-content;
+  box-shadow: 0px 0px 25px 10px #0006;
+  border-radius: 15px;
+}
+
+.bottom a:hover {
+  color: var(--teal-4) !important;
+}
+
+.group {
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputbox label {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+}
+
+.inputbox input::placeholder{
+  opacity: 0;
+  color: var(--grey-3);
+}
+
+.inputbox input:focus::placeholder {
+  opacity: 0.8;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: var(--grey-2);
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--grey-3);
+  transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.4s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: var(--grey-1);
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.radio-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  align-items: center;
+  color: var(--white);
+}
+
+.radio-button input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transform: translateZ(-25px);
+  transition: all 0.3s ease-in-out;
+}
+
+.radio::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: var(--blue-3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.radio-button input[type="radio"]:checked + .radio {
+    border-color: var(--white);
+    transform: translateZ(0px);
+    background-color: var(--blue-2);
+}
+
+.radio-button input[type="radio"]:checked + .radio::before {
+    opacity: 1;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
